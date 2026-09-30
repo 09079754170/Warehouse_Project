@@ -53,6 +53,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\DashboardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,8 +130,18 @@
     <None Include="Database\CreateDatabase.sql" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\DispatchControl.resx">
       <DependentUpon>DispatchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemsControl.resx">
+      <DependentUpon>ItemsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MovementHistoryControl.resx">
       <DependentUpon>MovementHistoryControl.cs</DependentUpon>
@@ -143,6 +158,21 @@
     <EmbeddedResource Include="Views\TransfersControl.resx">
       <DependentUpon>TransfersControl.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wAREHOSUE LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WAREHOUSE LOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock logo login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock logo login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOck login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -52,5 +52,20 @@ namespace WMS_Project
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlBrand_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
